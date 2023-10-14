@@ -3,7 +3,8 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 import { name, age, isValid } from './bases/01-types'
-import { pokemonIDs } from './bases/02-object.ts'
+import { pokemonIDs, bolbasaur, pokemons } from './bases/02-object.ts'
+import { charmander } from './bases/03-clases.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -21,6 +22,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       ${name} edad ${age} isValid ${isValid?'true':'false'}
     </p>
     <p>${pokemonIDs.join('|')}</p>
+    <p>${bolbasaur.name} ${bolbasaur.age}</p>
+    <p>${pokemons.join(',')}</p>
+    <p>${charmander.id} ${charmander.name}</p>
   </div>
 `
 
